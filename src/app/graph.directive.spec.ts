@@ -6,8 +6,6 @@ import {
   expect, it, xit,
   async, inject
 } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { BarGraph } from './graph.directive';
 
-beforeEachProviders(() => [AppComponent]);
-
-describe('App: StreamdataAngular2', () => {});
+describe('Graph Directive', () => {});

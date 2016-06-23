@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>StreamdataAngular2</title>
+  <title>Streamdata Angular2</title>
   <base href="/">
 
   {{#unless environment.production}}
@@ -14,18 +14,16 @@
 <body>
   <app-root>Loading...</app-root>
 
-  
+  <script src="https://cdn.rawgit.com/streamdataio/streamdataio-js/master/stockmarket-angular/scripts/streamdataio.min.js"></script>
 
-    {{#each scripts.polyfills}}
-    <script src="{{.}}"></script>
-    {{/each}}
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
-
-  
+  {{#each scripts.polyfills}}
+  <script src="{{.}}"></script>
+  {{/each}}
+  <script>
+    System.import('system-config.js').then(function () {
+      System.import('main');
+    }).catch(console.error.bind(console));
+  </script>
 
 </body>
 </html>

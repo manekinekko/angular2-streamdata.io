@@ -7,6 +7,7 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'd3': 'http://rawgit.com/monfera/sf-student-dashboard/master/d3.js'
 };
 
 /** User packages configuration. */
